@@ -7,15 +7,13 @@
 
 # Gridiron
 
-A powerful tool for generating and analyzing image grids to evaluate diffusion model training and fine-tuning.
+A powerful tool for generating and analyzing image grids to evaluate diffusion model training, prompting, and parameters.
 
 ## Features
 
-- Generate comparison grids from multiple model outputs
-- Support for various diffusion model formats
-- Easy-to-use command line interface
-- Customizable grid layouts and sizes
-- Batch processing capabilities
+- Generate comparison grids using one or more ComfyUI instances as the backend
+- Cache previous results for faster grid generation during model development.
+- Python-based DSL for defining grids
 
 ## Installation
 
@@ -25,18 +23,29 @@ pip install gridiron
 
 ## Usage
 
+Create a Python file with the following content:
+
+```python
+from gridiron import Grid
+```
+
 Basic usage example:
 
 ```bash
-gridiron --model-a path/to/model1 --model-b path/to/model2 --prompt "your prompt here"
+gridiron run test_grid.py
 ```
 
-This will generate a grid comparing outputs from both models.
+This will generate a grid according to the definitions in `my_grid_definitions.py`.
+
+```bash
+gridiron serve test_grid.py
+```
+
+This will generate a grid according to the definitions in `my_grid_definitions.py`, starting in HTTP server so you can watch the grid as it generates.
 
 ## Requirements
 
 - Python 3.11+
-- Compatible with major diffusion model frameworks
 
 ## License
 
