@@ -9,6 +9,10 @@
 
 A powerful tool for generating and analyzing image grids to evaluate diffusion model training, prompting, and parameters.
 
+## Construction Zone
+
+This project is a work in progress. While you can generate grids with it, and they are bringing me value, it's not yet in a state where it's ready to be used by others. Stay tuned.
+
 ## Features
 
 - Generate comparison grids using one or more ComfyUI instances as the backend
@@ -20,28 +24,6 @@ A powerful tool for generating and analyzing image grids to evaluate diffusion m
 ```bash
 pip install gridiron
 ```
-
-## Usage
-
-Create a Python file with the following content:
-
-```python
-from gridiron import Grid
-```
-
-Basic usage example:
-
-```bash
-gridiron run test_grid.py
-```
-
-This will generate a grid according to the definitions in `my_grid_definitions.py`.
-
-```bash
-gridiron serve test_grid.py
-```
-
-This will generate a grid according to the definitions in `my_grid_definitions.py`, starting in HTTP server so you can watch the grid as it generates.
 
 ## Requirements
 
