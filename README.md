@@ -43,6 +43,7 @@ These are some things I've found Gridiron useful for:
 - Support filtering within the web page.
 - Support >2 dimensional grids
 - Improve web visuals
+- Create a way to easily share grids with others
 
 ## Installation
 
