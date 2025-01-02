@@ -9,35 +9,6 @@
 
 A powerful tool for generating and analyzing image grids to evaluate diffusion model training and fine-tuning.
 
-## Features
+# Construction Zone
 
-- Generate comparison grids from multiple model outputs
-- Support for various diffusion model formats
-- Easy-to-use command line interface
-- Customizable grid layouts and sizes
-- Batch processing capabilities
-
-## Installation
-
-```bash
-pip install gridiron
-```
-
-## Usage
-
-Basic usage example:
-
-```bash
-gridiron --model-a path/to/model1 --model-b path/to/model2 --prompt "your prompt here"
-```
-
-This will generate a grid comparing outputs from both models.
-
-## Requirements
-
-- Python 3.11+
-- Compatible with major diffusion model frameworks
-
-## License
-
-See [LICENSE](LICENSE) file for details.
+This project is a work in progress. While you can generate grids with it, and they are bringing me value, it's not yet in a state where it's ready to be used by others. Stay tuned.
