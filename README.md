@@ -16,9 +16,10 @@ A powerful tool for generating and analyzing image grids to evaluate diffusion m
 
 Current methods for generating image grids have some drawbacks:
 
-- Viewing giant .pngs with dozens or hundreds of images is inconvenient
+- Viewing giant .pngs with dozens or hundreds of images is inconvenient, and with thousands of images it's impractical.
 - If you are evaluating the same stuff over and over, you end up generating the same images over and over for different grids
-- Most grid generation tools are limited to a single GPU (SwarmUI is an exception)
+- It's hard or impossible to "zoom in" on individual images in a grid
+- Most grid generation tools are limited to a single GPU
 - Grid generation UIs leave a lot to be desired
 - Grid generation UI based configurations are ephemeral and easy to lose/forget when you want to go back and make a comparison.
 
